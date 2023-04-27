@@ -1,0 +1,1102 @@
+/*  --  FONTS CSS  --  */
+
+@font-face {
+    font-family: 'Oswald';
+    font-style: normal;
+    font-weight: 400, 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/oswald/v49/TK3IWkUHHAIjg75cFRf3bXL8LICs1_Fv40pKlN4NNSeSASz7FmlWHYg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400, 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/sourcesanspro/v21/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+/*  --  UNIVERSAL CSS  --  */
+
+html {
+    font-size: 1vw;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 7.14rem;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5.21rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 3.5rem 0;
+}
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 3.57rem;
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.857rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.05rem;
+    margin: 0 0 1.5rem 0;
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0rem;
+    margin: 0 0 1.5rem 0;
+}
+
+p {
+    font-size: 1.7857rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.button {
+    background-color: #FFB800;
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: #FFE4A0;
+}
+
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 1.2vw;
+    }
+
+    section {
+        padding: 6rem 3rem;
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+    html {
+        font-size: 2.5vw;
+    }
+
+    section {
+        padding: 4rem 1.5rem;
+    }
+}
+
+
+/*  --  NAVBAR CSS  --  */
+
+header {
+    margin: 0 7.14rem;
+    position: fixed;
+    top: 2.14rem;
+    bottom: auto;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0.35rem 0.35rem 1.43rem 0.35rem rgba(0, 0, 0, 0.1) 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.07rem 2.85rem;
+}
+
+.logo-holder {
+    display: flex;
+}
+
+.logo-image {
+    height: 3.21rem;
+    width: 3.21rem;
+    margin-right: 1.07rem;
+}
+
+.logo-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.86rem;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.nav-links-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link {
+    font-weight: 400;
+    font-size: 1.43rem;
+    text-decoration: none;
+    margin-right: 2.86rem;
+    color:black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav {
+    font-size: 1.43rem;
+    padding: 0.691rem 2.14rem 0.714rem;
+}
+
+@media only screen and (max-width: 992px) {
+    header {
+    margin: 0 3rem;
+    top: 1.07rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        margin: 0 1.5rem;
+        top: 1.5rem;
+    }
+    
+    nav {
+        padding: 1rem 1.5rem;
+    }
+    
+    .nav-link {
+        display: none;
+    }
+}
+
+
+/*  --  HERO CSS  --  */
+
+.hero {
+    padding-top: 0rem;
+    padding-bottom: 5rem;
+    padding-right: 0rem;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text-holder {
+    width: 42.86rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding-top: 7rem;
+}
+
+.title-tag {
+    font-size: 1.43rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.main {
+    font-size: 1.79rem;
+    padding: 1.1285rem 2.8571rem 1.4285rem;
+}
+
+.hero-image-holder {
+    width: 50rem;
+    height: 51rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+    .hero-text-holder {
+        width: 47rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .hero {
+        padding: 0 0 2rem 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .hero-text-holder {
+        width: 35.2rem;
+        padding: 14rem 1.5rem 6.5rem 1.5rem;
+    }
+
+    .hero-image-holder {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/*  --  ABOUT CSS  --  */
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.about-image-holder {
+    width: 46%;
+    position: relative;
+}
+
+.about-image-box {
+    width: 34.26rem;
+    height: 32.43rem;
+    overflow: hidden;
+}
+
+.about-image-1 {
+    height: 100%;
+    width: auto;
+    position: relative;
+    right: 6rem;
+}
+
+.about-image-2 {
+    height: 25.07rem;
+    width: 16.88rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: auto;
+    left: auto;
+    z-index: 2;
+}
+
+.about-text-holder {
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.about-container h2 {
+    width: 29rem;
+    margin-bottom: 2.4rem;
+}
+
+.big-links {
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    font-size: 1.79rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 3rem;
+}
+
+.big-links:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+    .about-image-box {
+        width: 31.26rem;
+        height: 34.43rem;
+    }
+    
+    .about-image-1 {
+        right: 8rem;
+    }
+    
+    .about-container h2 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .about-container {
+        flex-direction: column-reverse;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .about-text-holder {
+        width: 97%;
+        margin-bottom: 7.5rem;
+    }
+
+    .about-image-holder {
+        width: 100%;
+        height: 41rem;
+    }
+    
+    .about-image-box {
+        width: 90%;
+        height: 31rem;
+    }
+    
+    .about-image-1 {
+        right: 6rem;
+    }
+    
+    .about-image-2 {
+        width: 18rem;
+    }
+}
+
+
+/*  --  GUIDE CSS  --  */
+
+.guide-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.guide-text-holder {
+    width: 51%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.guide-container h2 {
+    width: 35rem;
+    margin-bottom: 2.4rem;
+}
+
+.guide-image-holder {
+    width: 42%;
+    position: relative;
+}
+
+.guide-image-1 {
+    height: 42.64rem;
+    width: auto;
+    margin-top: auto;
+    margin-bottom: 0;
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: 0;
+    left: 0;
+}
+
+.guide-image-box {
+    height: 21.43rem;
+    width: 20.71rem;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: auto;
+    z-index: 2;
+}
+
+.guide-image-2 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    bottom: 4rem;
+}
+
+@media only screen and (max-width: 992px) {
+    
+}
+
+@media only screen and (max-width: 576px) {
+    .guide {
+        padding-top: 3rem;
+    }
+
+    .guide-container {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+    }
+
+    .guide-text-holder {
+        width: 100%;
+        margin-bottom: 7.5rem;
+    }
+    
+    .guide-container h2 {
+        width: 100%;
+    }
+
+    .guide-image-holder {
+        width: 100%;
+        height: 51rem;
+    }
+    
+    .guide-image-1 {
+        height: 44rem;
+    }
+    
+    .guide-image-box {
+        height: 24rem;
+    }
+    
+    .guide-image-2 {
+        bottom: 6rem;
+    }
+}
+
+
+/*  --  TESTIMONIAL CSS  --  */
+
+.testimonial {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.testimonial-container {
+    background-color: #FFE4A0;
+    padding: 4.29rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.35rem 0.35rem 1.43rem 0.35rem rgba(0, 0, 0, 0.1)
+}
+
+.testimonial-image-holder {
+    width: 15.57rem;
+    height: 19rem;
+    overflow: hidden;
+}
+
+.testimonial-image {
+    width: 150%;
+    height: auto;
+    position: relative;
+    bottom: 7rem;
+    right: 6rem;
+}
+
+.testimonial-text-holder {
+    width: 51.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.testimonial h3 {
+    text-align: right;
+}
+
+.signature {
+    font-size: 1.7857rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.names {
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 992px) {
+    .testimonial {
+        padding-top: 4.8rem;
+        padding-bottom: 1.8rem;
+    }
+    
+    .testimonial-container {
+        padding: 3.5rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .testimonial {
+        padding-top: 5rem;
+        padding-bottom: 3rem;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+        padding: 3rem 3rem;
+    }
+
+    .testimonial-image-holder {
+        width: 100%;
+        height: 25rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .testimonial-image {
+        width: 130%;
+        bottom: 13rem;
+        right: 8rem;
+    }
+
+    .testimonial-text-holder {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimonial h3 {
+        text-align: left;
+    }
+
+    .signature {
+        margin-top: 1rem;
+    }
+}
+
+
+/*  --  UPCOMING CSS  --  */
+
+.upcoming h2 {
+    font-size: 5.71rem;
+    text-align: center;
+    margin-bottom: 6.5rem;
+}
+
+.upcoming-grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 3rem;
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 1.786rem 1.786rem 2.285rem;
+    box-shadow: 0.35rem 0.35rem 1.43rem 0.35rem rgba(0, 0, 0, 0.1)
+}
+
+.card-holder:hover {
+    box-shadow: 0.35rem 0.35rem 1.43rem 0.35rem rgba(0, 0, 0, 0.15)
+}
+
+.card-image-holder {
+    height: 17.857rem;
+    width: 22.48rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.card-image-h {
+    height: 100%;
+    width: auto;
+}
+
+.card-date {
+    font-size: 1.43rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-flex {
+    width: 80%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 0.86rem;
+    column-gap: 1.65rem;
+}
+
+.info-wrapper {
+    display: flex;
+    justify-content: start;
+    justify-items: center;
+    align-items: center;
+    align-content: start;
+}
+
+.info-icon {
+    height: 1.07rem;
+    margin-right: 0.5rem;
+}
+
+.info-text {
+    font-size: 1.07rem;
+    letter-spacing: 0.1rem;
+}
+
+.card-text {
+    font-size: 1.43rem;
+    font-weight: 400;
+    letter-spacing: 0rem;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    font-size: 1.43rem;
+    padding: 1.0714rem 1.7857rem 1.2857rem;
+    margin-top: 1.3rem;
+}
+
+.joined-holder {
+    display: flex;
+    justify-content: start;
+    align-items: baseline;
+    margin-top: 2rem;
+}
+
+.joined-image-box {
+    height: 1.1rem;
+    margin-right: 3.5rem;
+    position: relative;
+}
+
+.joined-image {
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    bottom: auto;
+    left: 0;
+    right: auto;
+}
+
+.joined {
+    font-size: 0.95rem;
+}
+
+.left {
+    z-index: 1;
+}
+
+.center {
+    left: 0.7rem;
+    z-index: 2;
+}
+
+.right {
+    left: 1.4rem;
+    z-index: 3;
+}
+
+@media only screen and (max-width: 992px) {
+    .upcoming-grid {
+        gap: 1.5rem;
+    }
+    
+    .card-holder {
+        padding: 1.586rem 1.586rem 2.085rem;
+    }
+    
+    .card-image-holder {
+        width: 21.09rem;
+    }
+    
+    .card-text {
+        padding-right: 2rem;
+    }
+    
+    .joined {
+        font-size: 1rem;
+        padding-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .upcoming-grid {
+        grid-template: repeat(3, 1fr) / 1fr;
+        gap: 5rem;
+    }
+
+    .card-holder {
+        padding: 2rem 2rem 3rem;
+    }
+
+    .card-image-holder {
+        height: 25rem;
+        width: 31.2rem;
+    }
+    
+    .card-image-h {
+        height: 100%;
+        width: auto;
+    }
+
+    .card-date {
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    .card-holder h4 {
+        margin-bottom: 2rem;
+    }
+
+    .info-flex {
+        row-gap: 1rem;
+        column-gap: 2rem;
+        margin-bottom: 0.1rem;
+    }
+    
+    .info-icon {
+        height: 1.7rem;
+        margin-right: 0.8rem;
+    }
+    
+    .info-text {
+        font-size: 1.4rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .card-text {
+        font-size: 1.8rem;
+    }
+    
+    .card {
+        margin-top: 1.7rem;
+    }
+
+    .joined-holder {
+        margin-top: 3rem;
+        align-items: center;
+    }
+    
+    .joined-image-box {
+        height: 1.8rem;
+        margin-right: 4.3rem;
+    }
+    
+    .joined-image {
+        height: 1.8rem;
+        width: 1.8rem;
+    }
+    
+    .joined {
+        font-size: 1.2rem;
+        padding-top: 0.2rem;
+    }
+    
+    .center {
+        left: 0.9rem;
+    }
+    
+    .right {
+        left: 1.8rem;
+    }
+}
+
+
+/*  --  DISCORD CSS  --  */
+
+.discord {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.discord-container {
+    background-color: #FFE4A0;
+    padding: 4.29rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.35rem 0.35rem 1.43rem 0.35rem rgba(0, 0, 0, 0.1)
+}
+
+.discord h3 {
+    text-align: center;
+    width: 56rem;
+}
+
+.discord-link {
+    color: black;
+}
+
+.discord-link:hover {
+    color: purple;
+}
+
+@media only screen and (max-width: 992px) {
+    .discord {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
+    
+    .discord-container {
+        padding: 3rem 5rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .discord {
+        padding-bottom: 3rem;
+    }
+
+    .discord-container {
+        padding: 4rem 6rem;
+    }
+
+    .discord h3 {
+        text-align: center;
+        width: auto;
+    }
+}
+
+
+/*  --  RECENT CSS  --  */
+
+.recent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+}
+
+.recent h2 {
+    font-size: 5.71rem;
+    text-align: center;
+    margin-bottom: 6.5rem;
+}
+
+.recent-grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+    gap: 3rem;
+    margin-bottom: 6rem;
+}
+
+.card-image-v {
+    height: auto;
+    width: 100%;
+}
+
+.recent h4 {
+    font-size: 1.77rem;
+    line-height: 1.3;
+}
+
+.recent .card {
+    margin-top: 2.1rem;
+}
+
+.card-image-r {
+    height: auto;
+    width: 100%;
+    position: relative;
+    bottom: 10rem;
+}
+
+.recent-link {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.857rem;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+
+.recent-link:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+    .recent-grid {
+        gap: 1.5rem;
+        margin-bottom: 5rem;
+    }
+    
+    .card-image-v {
+        height: 100%;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .recent-grid {
+        grid-template: repeat(3, 1fr) / 1fr;
+        gap: 5rem;
+        margin-bottom: 6.5rem;
+    }
+
+    .recent h4 {
+        font-size: 2.3rem;
+        line-height: 1.3;
+    }
+
+    .recent .card {
+        margin-top: 2.3rem;
+    }
+
+    .recent-link {
+        margin-bottom: 3.8rem;
+    }
+}
+
+
+/*  --  FOOTER CSS  --  */
+
+.footer {
+    margin: 0;
+}
+
+.foot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.foot-image-holder {
+    width: 50rem;
+    height: 65.6rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.foot-image {
+    height: 100%;
+    width: auto;
+}
+
+.foot-text-holder {
+    width: 37.4315rem;
+    padding: 3.5714rem 7.14rem 2rem 5.4285rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.footer h2 {
+    font-size: 5.21rem;
+    width: 32rem;
+}
+
+.form-holder {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: stretch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.input-tag {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+}
+
+input {
+    width: auto;
+    height: 3.5rem;
+    border: none;
+    background-color: rgb(192, 192, 192);
+    margin-bottom: 1.2rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    color: black;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.company-details {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 4rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .foot-image-holder {
+        height: 63.5rem;
+    }
+    
+    .foot-text-holder {
+        width: 43rem;
+        padding: 2rem 3rem 1.2rem 4rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .foot-container {
+        flex-direction: column;
+    }
+
+    .foot-image-holder {
+        width: 100%;
+        height: 45rem;
+    }
+
+    .foot-image {
+        height: 100%;
+        width: auto;
+    }
+
+    .foot-text-holder {
+        width: 35rem;
+        padding: 7rem 1.5em 2rem 1.5rem;
+    }
+
+    .form-holder {
+        margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
+    }
+
+    .input-tag {
+        font-size: 1.6rem;
+        margin-bottom: 0.8rem;
+    }
+
+    input {
+        height: 5rem;
+        margin-bottom: 1.6rem;
+        padding-left: 2rem;
+        font-size: 1.7rem;
+    }
+
+    .company-details {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin-top: 5rem;
+    }
+}
